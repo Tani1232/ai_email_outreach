@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background: #f9f9f9;
+    }
+    h2 { color: #0056b3; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Hello {{ name }},</h2>
+
+    <p>{{ business_summary }}</p>
+
+    <p>Here are a few things we noticed:</p>
+    <ul>
+      {% for issue in issues %}
+        <li>{{ issue }}</li>
+      {% endfor %}
+    </ul>
+
+    <p>{{ cta }}</p>
+
+    <p>{{ signature }}</p>
+  </div>
+</body>
+</html>

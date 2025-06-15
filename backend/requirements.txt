@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pandas
+aiohttp
+requests
+python-multipart
+openai
+a
+beautifulsoup4
+jinja2
+python-dotenv
+sendgrid
